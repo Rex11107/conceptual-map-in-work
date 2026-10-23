@@ -14,7 +14,7 @@ jobs:
       - name: Capacitor Android
         working-directory: apps/web
         run: |
-          npm i --no-save @capacitor/core @capacitor/cli @capacitor/android
+          npm i --no-save --no-package-lock --workspaces=false @capacitor/core@6 @capacitor/cli@6 @capacitor/android@6
           [ -d android ] || npx cap add android
           npx cap sync android
           cd android && ./gradlew assembleDebug
