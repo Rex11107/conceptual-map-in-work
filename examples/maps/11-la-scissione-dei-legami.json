@@ -1,0 +1,120 @@
+{
+ "schema": "concept-map/1",
+ "title": "La scissione dei legami",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 19"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Scissione\ndei legami"
+  },
+  {
+   "id": "E1",
+   "cls": "l1",
+   "text": "Eterolitica",
+   "emoji": "⚡"
+  },
+  {
+   "id": "E2",
+   "cls": "l2",
+   "text": "entrambi gli elettroni\nsu un atomo"
+  },
+  {
+   "id": "E3",
+   "cls": "l2",
+   "text": "un atomo acquista,\nl'altro cede"
+  },
+  {
+   "id": "O1",
+   "cls": "l1",
+   "text": "Omolitica",
+   "emoji": "⚖️"
+  },
+  {
+   "id": "O2",
+   "cls": "l2",
+   "text": "un elettrone\nper atomo"
+  },
+  {
+   "id": "F1",
+   "cls": "extra",
+   "text": "A—A → 2 A•"
+  },
+  {
+   "id": "R1",
+   "cls": "l1",
+   "text": "Radicali",
+   "emoji": "⚛️"
+  },
+  {
+   "id": "R2",
+   "cls": "l2",
+   "text": "elettrone spaiato"
+  },
+  {
+   "id": "R3",
+   "cls": "l2",
+   "text": "molto reattivi"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "E1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "E2",
+   "label": "lascia",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "E3",
+   "label": "uno",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "O1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "O1",
+   "to": "O2",
+   "label": "lascia",
+   "kind": "tree"
+  },
+  {
+   "from": "O1",
+   "to": "F1",
+   "label": "schema",
+   "kind": "tree"
+  },
+  {
+   "from": "O1",
+   "to": "R1",
+   "label": "genera",
+   "kind": "tree"
+  },
+  {
+   "from": "R1",
+   "to": "R2",
+   "label": "hanno",
+   "kind": "tree"
+  },
+  {
+   "from": "R1",
+   "to": "R3",
+   "label": "sono",
+   "kind": "tree"
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "schema": "concept-map/1",
+ "title": "Polarità e idrofilia",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 12–13"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Polarità\ne acqua"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Legame covalente",
+   "emoji": "⚖️"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "apolare: pari\nelettronegatività"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "polare: cariche\nparziali + e −"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Legami del carbonio",
+   "emoji": "🧱"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "C—C\napolare"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "C—H\npolarità minima"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Affinità per l'acqua",
+   "emoji": "💧"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "idrofile:\ngruppi polari\n—OH, —NH₂"
+  },
+  {
+   "id": "D3",
+   "cls": "l2",
+   "text": "idrofobiche:\nsenza gruppi\npolari"
+  },
+  {
+   "id": "D4",
+   "cls": "l2",
+   "text": "anfipatiche:\ndue regioni"
+  },
+  {
+   "id": "E1",
+   "cls": "l1",
+   "text": "Legame a idrogeno",
+   "emoji": "🤝"
+  },
+  {
+   "id": "E2",
+   "cls": "extra",
+   "text": "O—H, N—H, F—H\nforza intermolecolare\npiù forte"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "dipende da",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "riguarda",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "include",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "include",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "determina",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "molecole",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "molecole",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D4",
+   "label": "molecole",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "E1",
+   "label": "tra molecole",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "E2",
+   "label": "tra gruppi",
+   "kind": "tree"
+  },
+  {
+   "from": "A3",
+   "to": "E1",
+   "label": "permette",
+   "kind": "cross"
+  },
+  {
+   "from": "E1",
+   "to": "D2",
+   "label": "rende idrofile",
+   "kind": "cross"
+  }
+ ]
+}

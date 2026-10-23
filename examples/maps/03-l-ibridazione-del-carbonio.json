@@ -1,0 +1,176 @@
+{
+ "schema": "concept-map/1",
+ "title": "L'ibridazione del carbonio",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 5–9"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Ibridazione\norbitali puri → ibridi"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "sp³",
+   "emoji": "🔺"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "1 s + 3 p\n4 ibridi"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "tetraedrica\n109,5°"
+  },
+  {
+   "id": "A4",
+   "cls": "extra",
+   "text": "4 legami σ\nmetano CH₄"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "sp²",
+   "emoji": "🔶"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "1 s + 2 p\n3 ibridi · 1 p resta"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "trigonale planare\n120°"
+  },
+  {
+   "id": "B4",
+   "cls": "extra",
+   "text": "3 σ + 1 π\netene C₂H₄"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "sp",
+   "emoji": "➖"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "1 s + 1 p\n2 ibridi · 2 p restano"
+  },
+  {
+   "id": "D3",
+   "cls": "l2",
+   "text": "lineare\n180°"
+  },
+  {
+   "id": "D4",
+   "cls": "extra",
+   "text": "2 σ + 2 π\netino C₂H₂"
+  },
+  {
+   "id": "V1",
+   "cls": "l1",
+   "text": "Teoria VSEPR",
+   "emoji": "📐"
+  },
+  {
+   "id": "V2",
+   "cls": "extra",
+   "text": "4 σ tetraedrica · 3 σ planare\n2 σ lineare"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "geometria",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "forma",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "geometria",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B4",
+   "label": "forma",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "geometria",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D4",
+   "label": "forma",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "V1",
+   "label": "stessi risultati con",
+   "kind": "tree"
+  },
+  {
+   "from": "V1",
+   "to": "V2",
+   "label": "conta i",
+   "kind": "tree"
+  }
+ ]
+}

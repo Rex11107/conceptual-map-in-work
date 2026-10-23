@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vite/
+bench-results/
+*.log
+.env
+.env.*
+!.env.example
+android/
+.DS_Store

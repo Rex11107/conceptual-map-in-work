@@ -1,0 +1,165 @@
+{
+ "schema": "concept-map/1",
+ "title": "La combustione",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 19"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Combustione"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Cos'è",
+   "emoji": "🔥"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "rapida ossidazione\ndi un combustibile"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "comburente:\nquasi sempre O₂"
+  },
+  {
+   "id": "A4",
+   "cls": "l2",
+   "text": "luce e calore"
+  },
+  {
+   "id": "E1",
+   "cls": "l1",
+   "text": "Chi brucia",
+   "emoji": "🧬"
+  },
+  {
+   "id": "E2",
+   "cls": "l2",
+   "text": "tutti i composti\norganici"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Completa",
+   "emoji": "✅"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "ossigeno\nabbondante"
+  },
+  {
+   "id": "B3",
+   "cls": "extra",
+   "text": "CH₄ + 2 O₂ →\nCO₂ + 2 H₂O + calore"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Incompleta",
+   "emoji": "⚠️"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "ossigeno scarso,\nambienti chiusi"
+  },
+  {
+   "id": "D3",
+   "cls": "extra",
+   "text": "2 CH₄ + 3 O₂ →\n2 CO + 4 H₂O + calore"
+  },
+  {
+   "id": "D4",
+   "cls": "l2",
+   "text": "monossido di carbonio:\nletale anche in\npiccole quantità"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "è una",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "cioè",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "con",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "produce",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "E1",
+   "label": "riguarda",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "E2",
+   "label": "tutti",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "con",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "equazione",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "con",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "equazione",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D4",
+   "label": "produce",
+   "kind": "tree"
+  }
+ ]
+}

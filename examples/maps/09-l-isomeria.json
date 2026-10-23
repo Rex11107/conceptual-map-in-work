@@ -1,0 +1,174 @@
+{
+ "schema": "concept-map/1",
+ "title": "L'isomeria",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 14–17"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Isomeria\nstessa formula grezza\nproprietà diverse"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Di struttura",
+   "emoji": "🧩"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "di catena"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "di posizione"
+  },
+  {
+   "id": "A4",
+   "cls": "l2",
+   "text": "di gruppo\nfunzionale"
+  },
+  {
+   "id": "A2e",
+   "cls": "extra",
+   "text": "butano · isobutano\nC₄H₁₀"
+  },
+  {
+   "id": "A3e",
+   "cls": "extra",
+   "text": "1-propanolo\n2-propanolo\nC₃H₈O"
+  },
+  {
+   "id": "A4e",
+   "cls": "extra",
+   "text": "etanolo · etere\ndimetilico\nC₂H₆O"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Stereoisomeria",
+   "emoji": "🌐"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "geometrica\ncis–trans"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "enantiomeria\n(ottica)"
+  },
+  {
+   "id": "B4",
+   "cls": "l2",
+   "text": "conformazionale"
+  },
+  {
+   "id": "B2e",
+   "cls": "extra",
+   "text": "rotazione bloccata\n(legame π o anello)"
+  },
+  {
+   "id": "B3e",
+   "cls": "extra",
+   "text": "stereocentro:\n4 gruppi diversi"
+  },
+  {
+   "id": "B4e",
+   "cls": "extra",
+   "text": "cicloesano C₆H₁₂\nsedia · barca"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "si divide in",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "si divide in",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A2",
+   "to": "A2e",
+   "label": "esempio",
+   "kind": "tree"
+  },
+  {
+   "from": "A3",
+   "to": "A3e",
+   "label": "esempio",
+   "kind": "tree"
+  },
+  {
+   "from": "A4",
+   "to": "A4e",
+   "label": "esempio",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B4",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B2",
+   "to": "B2e",
+   "label": "richiede",
+   "kind": "tree"
+  },
+  {
+   "from": "B3",
+   "to": "B3e",
+   "label": "richiede",
+   "kind": "tree"
+  },
+  {
+   "from": "B4",
+   "to": "B4e",
+   "label": "esempio",
+   "kind": "tree"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "schema": "concept-map/1",
+ "title": "I gruppi funzionali",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 12 (tabella 1)"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Gruppi funzionali"
+  },
+  {
+   "id": "L1",
+   "cls": "l1",
+   "text": "Classi di composti",
+   "emoji": "🏷️"
+  },
+  {
+   "id": "G1",
+   "cls": "l2",
+   "text": "alogenuri\nclorometano CH₃—Cl"
+  },
+  {
+   "id": "G2",
+   "cls": "l2",
+   "text": "alcoli\nmetanolo CH₃—OH"
+  },
+  {
+   "id": "G3",
+   "cls": "l2",
+   "text": "eteri\ndimetiletere CH₃—O—CH₃"
+  },
+  {
+   "id": "G4",
+   "cls": "l2",
+   "text": "aldeidi\netanale (acetaldeide)"
+  },
+  {
+   "id": "G5",
+   "cls": "l2",
+   "text": "chetoni\npropanone (acetone)"
+  },
+  {
+   "id": "G6",
+   "cls": "l2",
+   "text": "acidi carbossilici\nacido etanoico (acetico)"
+  },
+  {
+   "id": "G7",
+   "cls": "l2",
+   "text": "esteri\netanoato di metile"
+  },
+  {
+   "id": "G8",
+   "cls": "l2",
+   "text": "ammidi\netanammide (acetammide)"
+  },
+  {
+   "id": "G9",
+   "cls": "l2",
+   "text": "ammine\nmetilammina CH₃—NH₂"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "L1",
+   "label": "si dividono in",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G1",
+   "label": "gruppo —X",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G2",
+   "label": "gruppo —OH",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G3",
+   "label": "gruppo —O—",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G4",
+   "label": "carbonile",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G5",
+   "label": "carbonile",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G6",
+   "label": "carbossile",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G7",
+   "label": "gruppo —COO—",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G8",
+   "label": "gruppo ammidico",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "G9",
+   "label": "gruppo —NH₂",
+   "kind": "tree"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+name: Android APK (debug)
+on: workflow_dispatch
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - run: npm ci
+      - run: npm run build:web
+      - name: Capacitor Android
+        working-directory: apps/web
+        run: |
+          npm i --no-save @capacitor/core @capacitor/cli @capacitor/android
+          [ -d android ] || npx cap add android
+          npx cap sync android
+          cd android && ./gradlew assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: conceptualmap-debug-apk
+          path: apps/web/android/app/build/outputs/apk/debug/*.apk

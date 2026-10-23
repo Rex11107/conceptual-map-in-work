@@ -1,0 +1,160 @@
+{
+ "schema": "concept-map/1",
+ "title": "Il carbonio e la chimica organica",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 2–3"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Il carbonio\n14° gruppo"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Chimica organica",
+   "emoji": "🧪"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "composti\ndel carbonio"
+  },
+  {
+   "id": "A3",
+   "cls": "extra",
+   "text": "esclusi: ossidi,\ncarbonati, cianuri,\ncarburi"
+  },
+  {
+   "id": "A4",
+   "cls": "l1",
+   "text": "Chimica inorganica",
+   "emoji": "🧫"
+  },
+  {
+   "id": "A5",
+   "cls": "l2",
+   "text": "tutti gli altri\nelementi"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Origine storica",
+   "emoji": "📜"
+  },
+  {
+   "id": "B2",
+   "cls": "extra",
+   "text": "vis vitalis\nforza vitale"
+  },
+  {
+   "id": "B3",
+   "cls": "extra",
+   "text": "1828 · Wöhler\nurea da cianato\ndi ammonio"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Proprietà",
+   "emoji": "⚛️"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "non metallo"
+  },
+  {
+   "id": "D3",
+   "cls": "l2",
+   "text": "elettronegatività\nintermedia · 2,55"
+  },
+  {
+   "id": "D4",
+   "cls": "l2",
+   "text": "idrogeno"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "studiato da",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "A4",
+   "label": "studiato da",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "ha una",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "ha",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "si occupa di",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "esclude",
+   "kind": "tree"
+  },
+  {
+   "from": "A4",
+   "to": "A5",
+   "label": "si occupa di",
+   "kind": "tree"
+  },
+  {
+   "from": "A3",
+   "to": "A4",
+   "label": "studiati da",
+   "kind": "cross"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "credeva nella",
+   "kind": "tree"
+  },
+  {
+   "from": "B2",
+   "to": "B3",
+   "label": "smentita nel",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "è un",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "ha",
+   "kind": "tree"
+  },
+  {
+   "from": "D3",
+   "to": "D4",
+   "label": "simile a",
+   "kind": "tree"
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "schema": "concept-map/1",
+ "title": "I legami del carbonio",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 3–4"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "I legami\ndel carbonio"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Legami covalenti",
+   "emoji": "🔗"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "somma dei legami\nsempre quattro"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Legame σ",
+   "emoji": "➡️"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "sovrapposizione\nlungo l'asse\ndei nuclei"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Legame π",
+   "emoji": "↔️"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "sovrapposizione\nlaterale di\norbitali p"
+  },
+  {
+   "id": "E1",
+   "cls": "l2",
+   "text": "semplice\nsolo σ"
+  },
+  {
+   "id": "E2",
+   "cls": "l2",
+   "text": "doppio\nσ + π"
+  },
+  {
+   "id": "E3",
+   "cls": "l2",
+   "text": "triplo\nσ + 2π"
+  },
+  {
+   "id": "X1",
+   "cls": "extra",
+   "text": "CH₄ metano\n4 semplici"
+  },
+  {
+   "id": "X2",
+   "cls": "extra",
+   "text": "C₂H₄ etene\n1 doppio\n+ 2 semplici"
+  },
+  {
+   "id": "X3",
+   "cls": "extra",
+   "text": "C₂H₂ etino\n1 triplo\n+ 1 semplice"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "forma",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "cioè",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "di tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "di tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "nasce da",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "nasce da",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "B1",
+   "label": "si aggiunge a",
+   "kind": "cross"
+  },
+  {
+   "from": "A1",
+   "to": "E1",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "E2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "E3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "X1",
+   "label": "esempio",
+   "kind": "tree"
+  },
+  {
+   "from": "E2",
+   "to": "X2",
+   "label": "esempio",
+   "kind": "tree"
+  },
+  {
+   "from": "E3",
+   "to": "X3",
+   "label": "esempio",
+   "kind": "tree"
+  }
+ ]
+}

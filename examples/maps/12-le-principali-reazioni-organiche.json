@@ -1,0 +1,162 @@
+{
+ "schema": "concept-map/1",
+ "title": "Le principali reazioni organiche",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 18"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Reazioni\norganiche"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Addizione",
+   "emoji": "➕"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "si scinde il π:\ndue legami σ"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Eliminazione",
+   "emoji": "➖"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "si rompono due σ:\nnasce un π"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Sostituzione",
+   "emoji": "🔄"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "un σ si rompe:\nesce un gruppo"
+  },
+  {
+   "id": "E1",
+   "cls": "l1",
+   "text": "Isomerizzazione",
+   "emoji": "🔀"
+  },
+  {
+   "id": "E2",
+   "cls": "l2",
+   "text": "molecola →\nsuo isomero"
+  },
+  {
+   "id": "F1",
+   "cls": "l1",
+   "text": "Acido-base",
+   "emoji": "⚗️"
+  },
+  {
+   "id": "F2",
+   "cls": "l2",
+   "text": "—COOH acido\n—NH₂ basico"
+  },
+  {
+   "id": "G1",
+   "cls": "l1",
+   "text": "Ossidoriduzione",
+   "emoji": "🔋"
+  },
+  {
+   "id": "G2",
+   "cls": "l2",
+   "text": "come in chimica\ninorganica"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "E1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "F1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "G1",
+   "label": "tipo",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "meccanismo",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "meccanismo",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "meccanismo",
+   "kind": "tree"
+  },
+  {
+   "from": "E1",
+   "to": "E2",
+   "label": "meccanismo",
+   "kind": "tree"
+  },
+  {
+   "from": "F1",
+   "to": "F2",
+   "label": "gruppi",
+   "kind": "tree"
+  },
+  {
+   "from": "G1",
+   "to": "G2",
+   "label": "uguale a",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "A1",
+   "label": "contrario di",
+   "kind": "cross"
+  }
+ ]
+}

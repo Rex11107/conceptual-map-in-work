@@ -1,0 +1,159 @@
+{
+ "schema": "concept-map/1",
+ "title": "Le catene carboniose",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "pp. 3, 10"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Catene carboniose\nscheletro carbonioso"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Forma",
+   "emoji": "📏"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "lineari"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "ramificate"
+  },
+  {
+   "id": "A4",
+   "cls": "l2",
+   "text": "aperte\no ad anello"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Tipo di legami",
+   "emoji": "🧱"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "sature: solo\nlegami\nsemplici"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "insature:\ndoppi o\ntripli"
+  },
+  {
+   "id": "B4",
+   "cls": "extra",
+   "text": "si aggiungono\natomi rompendo π"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Rotazione",
+   "emoji": "🌀"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "libera sui\nlegami\nsemplici"
+  },
+  {
+   "id": "D3",
+   "cls": "l2",
+   "text": "impedita dai\nlegami\ndoppi"
+  },
+  {
+   "id": "D4",
+   "cls": "extra",
+   "text": "serve rompere\nil legame π"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "ha una",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "ha dei",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "mostra",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "può essere",
+   "kind": "tree"
+  },
+  {
+   "from": "B3",
+   "to": "B4",
+   "label": "permette",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "avviene",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "con doppi",
+   "kind": "tree"
+  },
+  {
+   "from": "D3",
+   "to": "D4",
+   "label": "a meno di",
+   "kind": "tree"
+  },
+  {
+   "from": "B3",
+   "to": "D3",
+   "label": "blocca",
+   "kind": "cross"
+  }
+ ]
+}

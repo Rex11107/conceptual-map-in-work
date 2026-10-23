@@ -1,0 +1,22 @@
+{
+  "name": "conceptual-map-in-work",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ConceptualMap in Work: mappe concettuali e formulari DSA generati da un modello AI e modificabili a mano.",
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p packages/core --noEmit && tsc -p packages/bench --noEmit && tsc -p apps/web --noEmit",
+    "web": "npm run dev -w apps/web",
+    "build:web": "npm run build -w apps/web",
+    "bench": "tsx packages/bench/src/run.ts",
+    "examples": "python3 scripts/export_examples.py"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,120 @@
+{
+ "schema": "concept-map/1",
+ "title": "La reattività chimica",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 18"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Reattività\nchimica"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Catena idrocarburica",
+   "emoji": "🔗"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "C—C e C—H:\nforti, poco polari"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "sature:\npoco reattive"
+  },
+  {
+   "id": "A4",
+   "cls": "l2",
+   "text": "insature:\npiù reattive"
+  },
+  {
+   "id": "A5",
+   "cls": "extra",
+   "text": "π si rompe,\nσ resta integro"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Gruppi funzionali",
+   "emoji": "🎯"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "determinano\nla reattività"
+  },
+  {
+   "id": "K1",
+   "cls": "l1",
+   "text": "Catalizzatori",
+   "emoji": "⚗️"
+  },
+  {
+   "id": "K2",
+   "cls": "l2",
+   "text": "aumentano la\nvelocità"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "dipende da",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "ha",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "se satura",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "se insatura",
+   "kind": "tree"
+  },
+  {
+   "from": "A4",
+   "to": "A5",
+   "label": "perché",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "dipende da",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "soprattutto",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "K1",
+   "label": "nei processi biologici",
+   "kind": "tree"
+  },
+  {
+   "from": "K1",
+   "to": "K2",
+   "label": "servono",
+   "kind": "tree"
+  }
+ ]
+}

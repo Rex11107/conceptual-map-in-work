@@ -1,0 +1,162 @@
+{
+ "schema": "concept-map/1",
+ "title": "Sintesi del capitolo",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "capitolo 1"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Il carbonio\ne la chimica organica"
+  },
+  {
+   "id": "L1",
+   "cls": "l1",
+   "text": "Legami",
+   "emoji": "🔗"
+  },
+  {
+   "id": "L1b",
+   "cls": "l2",
+   "text": "σ e π\nsemplice, doppio, triplo"
+  },
+  {
+   "id": "L2",
+   "cls": "l1",
+   "text": "Ibridazione",
+   "emoji": "🔺"
+  },
+  {
+   "id": "L2b",
+   "cls": "l2",
+   "text": "sp³ · sp² · sp\ngeometria e angoli"
+  },
+  {
+   "id": "L3",
+   "cls": "l1",
+   "text": "Catene",
+   "emoji": "🧱"
+  },
+  {
+   "id": "L3b",
+   "cls": "l2",
+   "text": "lineari, ramificate, anello\nsature e insature"
+  },
+  {
+   "id": "L4",
+   "cls": "l1",
+   "text": "Molecole",
+   "emoji": "🧩"
+  },
+  {
+   "id": "L4b",
+   "cls": "l2",
+   "text": "formule · gruppi funzionali\npolarità"
+  },
+  {
+   "id": "L5",
+   "cls": "l1",
+   "text": "Isomeria",
+   "emoji": "🔀"
+  },
+  {
+   "id": "L5b",
+   "cls": "l2",
+   "text": "di struttura\nstereoisomeria"
+  },
+  {
+   "id": "L6",
+   "cls": "l1",
+   "text": "Reattività",
+   "emoji": "⚗️"
+  },
+  {
+   "id": "L6b",
+   "cls": "l2",
+   "text": "addizione · eliminazione\nsostituzione · combustione"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "L1",
+   "label": "forma",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "L2",
+   "label": "si ibrida",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "L3",
+   "label": "costruisce",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "L4",
+   "label": "origina",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "L5",
+   "label": "genera",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "L6",
+   "label": "partecipa a",
+   "kind": "tree"
+  },
+  {
+   "from": "L1",
+   "to": "L1b",
+   "label": "tipi",
+   "kind": "tree"
+  },
+  {
+   "from": "L2",
+   "to": "L2b",
+   "label": "tipi",
+   "kind": "tree"
+  },
+  {
+   "from": "L3",
+   "to": "L3b",
+   "label": "tipi",
+   "kind": "tree"
+  },
+  {
+   "from": "L4",
+   "to": "L4b",
+   "label": "include",
+   "kind": "tree"
+  },
+  {
+   "from": "L5",
+   "to": "L5b",
+   "label": "tipi",
+   "kind": "tree"
+  },
+  {
+   "from": "L6",
+   "to": "L6b",
+   "label": "tipi",
+   "kind": "tree"
+  },
+  {
+   "from": "L2",
+   "to": "L1",
+   "label": "usa legami σ",
+   "kind": "cross"
+  }
+ ]
+}

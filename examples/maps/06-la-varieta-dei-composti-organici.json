@@ -1,0 +1,153 @@
+{
+ "schema": "concept-map/1",
+ "title": "La varietà dei composti organici",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 12"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Composti organici\ntre grandi gruppi"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Idrocarburi",
+   "emoji": "⛽"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "solo carbonio\ne idrogeno"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Derivati degli\nidrocarburi",
+   "emoji": "🧩"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "scheletro\ncarbonioso"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "gruppo\nfunzionale"
+  },
+  {
+   "id": "B4",
+   "cls": "l2",
+   "text": "dà proprietà\nchimiche e fisiche"
+  },
+  {
+   "id": "B5",
+   "cls": "l2",
+   "text": "classi: natura\ncatena, tipo e\nnumero gruppi"
+  },
+  {
+   "id": "D1",
+   "cls": "l1",
+   "text": "Biomolecole",
+   "emoji": "🧬"
+  },
+  {
+   "id": "D2",
+   "cls": "l2",
+   "text": "acidi\nnucleici"
+  },
+  {
+   "id": "D3",
+   "cls": "l2",
+   "text": "proteine"
+  },
+  {
+   "id": "D4",
+   "cls": "l2",
+   "text": "lipidi"
+  },
+  {
+   "id": "D5",
+   "cls": "l2",
+   "text": "carboidrati"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "si dividono in",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "si dividono in",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "D1",
+   "label": "si dividono in",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "costituiti da",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "hanno",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "hanno",
+   "kind": "tree"
+  },
+  {
+   "from": "B3",
+   "to": "B4",
+   "label": "conferisce",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B5",
+   "label": "distinti per",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D2",
+   "label": "come",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D3",
+   "label": "come",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D4",
+   "label": "come",
+   "kind": "tree"
+  },
+  {
+   "from": "D1",
+   "to": "D5",
+   "label": "come",
+   "kind": "tree"
+  }
+ ]
+}

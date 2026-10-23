@@ -1,0 +1,141 @@
+{
+ "schema": "concept-map/1",
+ "title": "Le formule delle molecole organiche",
+ "subject": "Chimica organica",
+ "source": {
+  "book": "Le basi della chimica organica (cap. 1)",
+  "pages": "p. 11"
+ },
+ "nodes": [
+  {
+   "id": "C0",
+   "cls": "center",
+   "text": "Formule\ndelle molecole organiche"
+  },
+  {
+   "id": "A1",
+   "cls": "l1",
+   "text": "Bidimensionali",
+   "emoji": "📄"
+  },
+  {
+   "id": "A2",
+   "cls": "l2",
+   "text": "grezza\nnumero degli\natomi"
+  },
+  {
+   "id": "A3",
+   "cls": "l2",
+   "text": "di struttura\ntutti i\nlegami"
+  },
+  {
+   "id": "A4",
+   "cls": "l2",
+   "text": "razionale\nlegami C–C\ne C–altri"
+  },
+  {
+   "id": "A5",
+   "cls": "l2",
+   "text": "condensata\nsenza\nlegami"
+  },
+  {
+   "id": "A6",
+   "cls": "l2",
+   "text": "topologica\nlinea\nspezzata"
+  },
+  {
+   "id": "B1",
+   "cls": "l1",
+   "text": "Tridimensionali",
+   "emoji": "🧊"
+  },
+  {
+   "id": "B2",
+   "cls": "l2",
+   "text": "ball and stick\naste e sfere"
+  },
+  {
+   "id": "B3",
+   "cls": "l2",
+   "text": "space filling\na calotta"
+  },
+  {
+   "id": "B4",
+   "cls": "l2",
+   "text": "cunei e\ntratteggi"
+  },
+  {
+   "id": "X1",
+   "cls": "extra",
+   "text": "cloroetano\nC₂H₅Cl"
+  }
+ ],
+ "links": [
+  {
+   "from": "C0",
+   "to": "A1",
+   "label": "in piano",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "B1",
+   "label": "nello spazio",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A2",
+   "label": "esprime",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A3",
+   "label": "mostra",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A4",
+   "label": "semplifica",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A5",
+   "label": "semplifica ancora",
+   "kind": "tree"
+  },
+  {
+   "from": "A1",
+   "to": "A6",
+   "label": "traccia",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B2",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B3",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "B1",
+   "to": "B4",
+   "label": "usa",
+   "kind": "tree"
+  },
+  {
+   "from": "C0",
+   "to": "X1",
+   "label": "esempio",
+   "kind": "tree"
+  }
+ ]
+}
