@@ -61,6 +61,10 @@ export const FormCard = z.object({
   example: z.string().optional(), // solo se l'utente lo chiede
   drawings: z.array(Drawing).default([]),
   notes: z.array(z.string()).default([]), // piccole note a lato
+  section: z.string().optional(), // titolo di sezione (fascia colorata) che apre un nuovo gruppo di schede
+  steps: z.array(z.string()).default([]), // procedura numerata (testo, può contenere $latex$ e ==evidenziato==)
+  table: z.object({ head: z.array(z.string()), rows: z.array(z.array(z.string())) }).optional(), // celle: testo o $latex$
+  rule: z.string().optional(), // regola/promemoria in fondo alla scheda (piccolo, grigio)
 });
 
 export const CheckItem = z.object({

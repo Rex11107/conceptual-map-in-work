@@ -22,3 +22,7 @@ button:disabled { opacity:.5; cursor:wait; }
 .preview svg { max-width:100%; height:auto; }
 .edit-table td { padding:2px; } .edit-table select, .edit-table input { padding:3px; }
 @media print { header, .left, .noprint { display:none !important; } main { display:block; padding:0; } section { border:0; } }
+.formwrap { overflow: auto; background:#888; padding: 8px; border-radius: 10px; }
+@media (max-width: 800px) { .formwrap .nb-page { zoom: .45; } }
+@media print { .formwrap { background:none; padding:0; overflow:visible; } .formwrap .nb-page { zoom:1; } }
+header button:not(.sec) { background:#fff; color:#1e3a8a; font-weight:700; }

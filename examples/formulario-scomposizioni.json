@@ -1,0 +1,30 @@
+{
+  "schema": "formulary/1",
+  "title": "Formulario di matematica",
+  "subject": "Matematica",
+  "cards": [
+    { "id": "racc-tot", "section": "Scomposizioni", "name": "Raccoglimento totale", "main": "ab + ac = a(b + c)", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "racc-par", "name": "Raccoglimento parziale", "main": "ab + ac + db + dc = a(b + c) + d(b + c) = (a + d)(b + c)", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "diff-quad", "name": "Differenza di 2 quadrati", "main": "a^2 - b^2 = (a - b)(a + b)", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "diff-cubi", "name": "Differenza di cubi", "main": "a^3 - b^3 = (a - b)(a^2 + ab + b^2)", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "somma-cubi", "name": "Somma di cubi", "main": "a^3 + b^3 = (a + b)(a^2 - ab + b^2)", "derived": [], "symbols": [], "drawings": [], "notes": [],
+      "rule": "Prima ==raccoglimento totale==, poi conta i termini: 2 → differenza di quadrati o somma/differenza di cubi; 3 → quadrato di binomio o trinomio di 2° grado; 4 → raccoglimento parziale o cubo di binomio; se nulla funziona → Ruffini." },
+    { "id": "quad-binomio", "name": "Quadrato di binomio", "main": "a^2 \\pm 2ab + b^2 = (a \\pm b)^2", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "cubo-binomio", "name": "Cubo di binomio", "main": "a^3 \\pm 3a^2b + 3ab^2 \\pm b^3 = (a \\pm b)^3", "derived": [], "symbols": [], "drawings": [], "notes": [] },
+    { "id": "eq2", "section": "Equazioni di secondo grado", "name": "Formula risolutiva", "main": "ax^2 + bx + c = 0 \\quad (a \\neq 0)",
+      "derived": ["\\Delta = b^2 - 4ac", "x_{1,2} = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}"],
+      "symbols": [ {"sym": "a", "meaning": "coefficiente di x²"}, {"sym": "b", "meaning": "coefficiente di x"}, {"sym": "c", "meaning": "termine noto"}, {"sym": "\\Delta", "meaning": "discriminante"} ],
+      "conditions": "Δ>0: 2 soluzioni; Δ=0: coincidenti; Δ<0: nessuna",
+      "drawings": [], "notes": ["se b è pari: ==formula ridotta=="] },
+    { "id": "ruffini", "name": "Ruffini", "main": "P(x) = (x - r)\\,Q(x) \\quad \\text{se } P(r)=0", "derived": [], "symbols": [ {"sym": "r", "meaning": "radice trovata tra i divisori di D"} ],
+      "steps": ["scrivo i ==coefficienti== (polinomio ordinato e completo)", "abbasso il primo coefficiente", "lo moltiplico per $r$ e lo scrivo sotto il successivo", "sommo in colonna e ripeto fino alla fine", "l'ultimo numero è il resto: deve essere 0"],
+      "drawings": [], "notes": [] },
+    { "id": "valori-notevoli", "section": "Seno e coseno", "name": "Valori notevoli", "main": "\\sin^2\\alpha + \\cos^2\\alpha = 1", "derived": [],
+      "symbols": [ {"sym": "\\alpha", "meaning": "angolo acuto"} ],
+      "table": { "head": ["α", "0°", "30°", "45°", "60°", "90°"], "rows": [
+        ["sen α", "0", "$\\frac{1}{2}$", "$\\frac{\\sqrt{2}}{2}$", "$\\frac{\\sqrt{3}}{2}$", "1"],
+        ["cos α", "1", "$\\frac{\\sqrt{3}}{2}$", "$\\frac{\\sqrt{2}}{2}$", "$\\frac{1}{2}$", "0"] ] },
+      "drawings": [], "notes": [] }
+  ],
+  "checks": []
+}

@@ -98,6 +98,8 @@ function balanced(s: string): boolean {
 }
 
 /** Controlli sul contenuto di un formulario. */
+const balancedDollar = (t: string) => (t.replace(/\\\$/g, "").match(/\$/g)?.length ?? 0) % 2 === 0;
+
 export function validateFormulary(f: Formulary): Issue[] {
   const out: Issue[] = [];
   const add = (level: Issue["level"], code: string, where: string, message: string) =>
@@ -117,11 +119,18 @@ export function validateFormulary(f: Formulary): Issue[] {
       ["when", c.when],
       ["conditions", c.conditions],
       ["warning", c.warning],
+      ["rule", c.rule],
     ] as const) {
       if (t && words(t) > LIMITS.sentenceWordsMax)
         add("warn", "sentence-long", `${c.id}.${k}`, `${words(t)} parole (max ${LIMITS.sentenceWordsMax})`);
       if (t && LEAK.test(t)) add("warn", "style-leak", `${c.id}.${k}`, "il testo contiene HTML o markdown");
     }
+    for (const [i, st] of c.steps.entries()) {
+      if (LEAK.test(st)) add("warn", "style-leak", `${c.id}.steps[${i}]`, "il testo contiene HTML o markdown");
+      if (!balancedDollar(st)) add("error", "dollar", `${c.id}.steps[${i}]`, "simboli $ non bilanciati");
+    }
+    if (c.table && c.table.rows.some((r) => r.length !== c.table!.head.length))
+      add("error", "table-shape", c.id, "le righe della tabella hanno un numero di celle diverso dall'intestazione");
     const labels = new Set<string>();
     for (const d of c.drawings) {
       if (labels.has(d.label)) add("warn", "dup-label", c.id, `etichetta disegno duplicata: ${d.label}`);

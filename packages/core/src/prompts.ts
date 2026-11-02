@@ -76,7 +76,11 @@ export const FORMULARY_SCHEMA_DOC = `{
       "warning": "errore più frequente",
       "example": "solo se richiesto",
       "drawings": [ { "label": "A", "caption": "metano", "smiles": "C" } ],
-      "notes": ["piccola nota a lato"]
+      "notes": ["piccola nota a lato"],
+      "section": "titolo di sezione (solo sulla prima scheda del gruppo)",
+      "steps": ["1) primo passo", "2) secondo passo"],
+      "table": { "head": ["α", "30°", "45°"], "rows": [["sen α", "$\\\\frac{1}{2}$", "$\\\\frac{\\\\sqrt{2}}{2}$"]] },
+      "rule": "promemoria breve in fondo alla scheda"
     }
   ],
   "checks": [ { "kind": "verify", "where": "scheda x", "proposal": "...", "reason": "..." } ]
@@ -102,6 +106,7 @@ export function formularySystemPrompt(opts: { withExamples: boolean; example?: s
     `- Frasi di al massimo ${L.sentenceWordsMax} parole, solo parole chiave. Mai paragrafi.`,
     "- drawings: per la chimica usa smiles (la molecola la disegna l'app); per formule generali o schemi usa tex o text. label \"A\", \"B\", \"C\"...: A = caso o formula generale, B = esempio.",
     "- notes: al massimo 4 piccole note a lato per scheda.",
+    "- section: titolo del gruppo di schede (es. \"Scomposizioni\"); steps: procedure in passi numerati; table: tabelle (valori notevoli, segni); rule: promemoria finale. Nei testi (steps, notes, rule, celle) le formule vanno tra $...$ e le parole davvero chiave tra ==doppio uguale== (poche).",
     opts.withExamples
       ? "- L'utente ha chiesto gli esempi: aggiungi example (una riga) a ogni scheda."
       : "- NON aggiungere example (l'utente non ha chiesto gli esempi).",
