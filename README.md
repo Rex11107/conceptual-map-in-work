@@ -9,7 +9,7 @@ Il modello **non decide l'aspetto**. Restituisce solo JSON (`concept-map/1`, `fo
 - `packages/core` – schema (zod), regole, render SVG (dagre), client LLM, prompt, pipeline
 - `packages/bench` – confronto fra modelli sullo stesso testo
 - `apps/web` – interfaccia Vite + React (genera, modifica, controlli live, export JSON/SVG/PDF)
-- `examples/maps` – 14 mappe del cap. 1 di chimica organica
+- `examples/maps` – 14 mappe del cap. 1 di chimica organica; `examples/formulario-scomposizioni.json` – esempio di formulario quaderno
 
 ## Comandi
 ```bash
@@ -29,9 +29,11 @@ Il report (`bench-results/report.md`) mostra, per modello, % di risultati validi
 Workflow manuale `Android APK (debug)` su GitHub Actions: scarica l'APK dagli artifact e installalo.
 
 ## Stato e limiti (onesti)
-- Testato: core, regole, rendering, benchmark in modalità mock, build web.
-- **Non testato**: chiamate reali ai modelli, interfaccia nel browser, workflow Pages/Android.
-- Mancano ancora: lettura di PDF/foto (la trascrizione con visione è in `pipeline.ts`, non collegata alla UI), editor/render del formulario e disegno molecole da SMILES, esportazione PDF multipagina.
+- Testato: core, regole, rendering mappe e formulario, benchmark in modalità mock, build web, interfaccia in Chromium con API simulata e PDF di prova.
+- **Non testato**: chiamate reali ai modelli (anche la trascrizione con visione), workflow Android.
+- Ingresso: PDF con testo letti direttamente (pdf.js), scansioni e foto trascritte con un modello con visione.
+- Formulario in stile quaderno (`formulary-render.ts`, preset `NOTEBOOK`): quadretti, titoli colorati, lettere colorate per significato, evidenziatore, tabelle, passi numerati.
+- Mancano ancora: disegni (grafici, vettori, molecole da SMILES), esportazione PDF multipagina automatica, profili per materia.
 - Dal browser alcuni provider bloccano le richieste (CORS); OpenRouter funziona.
 
 ## Roadmap
